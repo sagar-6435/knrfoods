@@ -100,7 +100,7 @@ const Shop = () => {
               <div key={product.id} className="bg-white rounded-2xl overflow-hidden premium-shadow group">
                 <div className="relative h-64 overflow-hidden bg-gray-100">
                   <img 
-                    src={product.name.toLowerCase().includes('chicken') ? '/src/assets/chicken.jpg' : product.name.toLowerCase().includes('mango') ? '/src/assets/mango.jpg' : '/src/assets/prep.jpg'} 
+                    src={`/src/assets/${product.name.toLowerCase().includes('mango') ? 'mango' : product.name.toLowerCase().split(' ')[0]}.jpg`} 
                     alt={product.name}
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                   />

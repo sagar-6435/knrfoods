@@ -13,6 +13,9 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import AboutUs from './pages/AboutUs';
+import OurStory from './pages/OurStory';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -28,6 +31,9 @@ function App() {
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/login" element={<Login />} />
             <Route path="/account" element={<Dashboard />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/story" element={<OurStory />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
